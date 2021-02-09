@@ -2,8 +2,16 @@
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  background-image: url("../img/header/header-bg.jpg");
+}
+
 nav {
   background-color: #212121;
+  position: fixed;
+  display: block;
+  width: 100%;
+  z-index: 99;
 }
 
 .menu {
@@ -47,6 +55,299 @@ nav {
 
 .menu__link:hover {
   color: #1eacc7;
+}
+
+.sub-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 50px;
+}
+
+.sub-header__logo {
+  display: block;
+  margin-top: 17px;
+  max-width: 100%;
+}
+
+.sub-header__official {
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+
+.sub-header__call {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+  color: white;
+  margin-top: 18px;
+  margin-right: 8px;
+  text-align: right;
+}
+
+.sub-header__tel {
+  display: block;
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.sub-header__tel:hover {
+  color: #1eacc7;
+}
+
+.sub-header__btn {
+  width: 172px;
+  height: 46px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+  background: -webkit-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
+  background: -o-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  margin: 19px 0;
+}
+
+.promo {
+  padding: 55px 0 120px;
+}
+
+.promo__header {
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+
+.promo__subheader {
+  font-size: 36px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.promo__descr {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  max-width: 1030px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.promo__btn {
+  width: 259px;
+  height: 63px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+  background: -webkit-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
+  background: -o-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  -webkit-box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  margin: 114px auto 0;
+}
+
+.advantages {
+  padding: 70px 0 30px;
+}
+
+.advantages .container .row {
+  margin-top: 18px;
+}
+
+.label {
+  width: 112px;
+  height: 24px;
+  background-color: #000;
+  font-size: 11px;
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  margin-bottom: 23px;
+}
+
+.descr {
+  font-size: 38px;
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sub-descr {
+  font-size: 17px;
+  color: #222222;
+  text-align: center;
+  font-weight: 400;
+}
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 170px;
+}
+
+.block__circle {
+  width: 113px;
+  height: 113px;
+  border-radius: 100%;
+  background-color: #1eacc7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.block__wrapper {
+  max-width: 370px;
+  margin-left: 25px;
+}
+
+.block__title {
+  font-size: 17px;
+  color: #1eacc7;
+  font-weight: 400;
+}
+
+.block__descr {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.mobile {
+  padding: 47px 0 61px;
+  background-image: url(../img/mobbile-app/mobile-bg.png);
+}
+
+.mobile .row {
+  margin-top: 30px;
+}
+
+.mobile-item {
+  width: 320px;
+  height: 280px;
+  padding-top: 82px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 19px;
+}
+
+.mobile-item__title {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mobile-item__plus {
+  width: 26px;
+  height: 26px;
+  background-color: #000;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 35px;
+  cursor: pointer;
+}
+
+.mobile-item__plus:hover::after {
+  background-color: #ff6161;
+}
+
+.mobile-item__plus:hover::before {
+  background-color: #ff6161;
+}
+
+.mobile-item__plus::before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  display: block;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mobile-item__plus::after {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.mobile-item1 {
+  background-image: url(../img/mobbile-app/1.jpg);
+}
+
+.mobile-item2 {
+  background-image: url(../img/mobbile-app/2.jpg);
+}
+
+.mobile-item3 {
+  background-image: url(../img/mobbile-app/3.jpg);
+}
+
+.mobile-item4 {
+  background-image: url(../img/mobbile-app/4.jpg);
+}
+
+.mobile-item5 {
+  background-image: url(../img/mobbile-app/5.jpg);
+}
+
+.mobile-item6 {
+  background-image: url(../img/mobbile-app/6.jpg);
 }
 
 @media (min-width: 1400px) {
