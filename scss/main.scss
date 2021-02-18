@@ -1,6 +1,13 @@
 $main-color: #1eacc7;
 $second-color: #ff6161;
 
+@mixin btn-hover {
+   &:hover {
+      background: none;
+      background-color: $main-color;
+   }
+}
+
 * {
    font-family: "Roboto", sans-serif;
 }
@@ -118,6 +125,7 @@ nav {
       border: none;
       box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
       margin: 19px 0;
+      @include btn-hover;
    }
 }
 
@@ -171,12 +179,13 @@ nav {
       border-radius: 5px;
       border: none;
       margin: 114px auto 0;
+      @include btn-hover;
    }
 }
 
-// ======= ADVANTAGES
+// ======= Reasons
 
-.advantages {
+.reasons {
    padding: 70px 0 30px;
    .container {
       .row {
@@ -189,29 +198,41 @@ nav {
    height: 24px;
    background-color: #000;
    font-size: 11px;
-   font-weight: 100;
+   font-weight: 300;
    color: rgb(255, 255, 255);
    text-transform: uppercase;
    text-align: center;
    margin: 0 auto;
    padding-top: 5px;
    margin-bottom: 23px;
+   &__white {
+      background-color: #fff;
+      color: #000;
+      font-weight: 300;
+   }
 }
+
 .descr {
    font-size: 38px;
    color: rgb(34, 34, 34);
    font-weight: 700;
    text-transform: uppercase;
    text-align: center;
+   &__white {
+      color: #fff;
+   }
 }
 .sub-descr {
    font-size: 17px;
    color: rgb(34, 34, 34);
    text-align: center;
    font-weight: 400;
+   &__white {
+      color: #fff;
+   }
 }
 
-.block {
+.reasons-block {
    display: flex;
    min-height: 170px;
 
@@ -337,6 +358,39 @@ nav {
    &6 {
       background-image: url(../img/mobbile-app/6.jpg);
    }
+}
+
+// =======CHOICE
+
+.choice {
+   padding: 55px 0 135px;
+   background-image: url(../img/choice/choice-bg.jpg);
+   position: relative;
+   z-index: 1;
+   // .choice__black-bg
+
+   &__black-bg {
+      width: 100%;
+      height: 498px;
+      background-color: #070716;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+   }
+
+   // .choice__img-block
+
+   &__img-block {
+      display: flex;
+      justify-content: center;
+      margin-top: 48px;
+   }
+}
+.choice-descr {
+   width: 313px;
+   margin: 0 auto;
+   text-align: center;
 }
 
 // ==========================================
