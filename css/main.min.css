@@ -376,7 +376,7 @@ nav {
 
 .choice {
   padding: 55px 0 135px;
-  background-image: url(../img/choice/choice-bg.jpg);
+  background-image: url(../img/choice/choice-bg.png);
   position: relative;
   z-index: 1;
 }
@@ -405,6 +405,65 @@ nav {
   width: 313px;
   margin: 0 auto;
   text-align: center;
+}
+
+.demand {
+  padding: 70px 0 75px;
+}
+
+.demand .warning .demand-block__title {
+  color: #ff6161;
+}
+
+.demand .warning .demand-block__item:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/demand/check-red.png);
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  left: -32px;
+  top: 2px;
+}
+
+.demand-block {
+  margin: 33px 0;
+}
+
+.demand-block__title {
+  color: #1eacc7;
+  font-size: 22px;
+}
+
+.demand-block__list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-bottom: 0;
+}
+
+.demand-block__item {
+  margin-top: 11px;
+  position: relative;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.demand-block__item:before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/demand/check-blue.png);
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  left: -32px;
+  top: 2px;
+}
+
+.demand-block__descr {
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 300;
+  margin-top: 12px;
 }
 
 @media (min-width: 1400px) {
