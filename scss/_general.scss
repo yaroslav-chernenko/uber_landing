@@ -1,16 +1,3 @@
-$main-color: #1eacc7;
-$second-color: #ff6161;
-
-@mixin btn-hover {
-   &:hover {
-      background: none;
-      background-color: $main-color;
-   }
-}
-
-* {
-   font-family: "Roboto", sans-serif;
-}
 a:link {
    text-decoration: none;
 }
@@ -62,7 +49,7 @@ button {
 }
 //  =========== Header ============
 header {
-   background-image: url("../img/header/header-bg.jpg");
+   background: url("../img/header/header-bg.jpg") center center/cover no-repeat;
 }
 
 nav {
@@ -70,7 +57,8 @@ nav {
    position: fixed;
    display: block;
    width: 100%;
-   z-index: 99;
+   z-index: 90;
+   min-height: 50px;
 }
 .menu {
    padding: 14px 70px;
@@ -168,6 +156,9 @@ nav {
       @include btn-hover;
    }
 }
+.xs-visible {
+   display: none;
+}
 
 .promo {
    padding: 55px 0 120px;
@@ -222,6 +213,20 @@ nav {
       @include btn-hover;
    }
 }
+.header__xs-humburger {
+   display: none;
+   position: fixed;
+   top: 14px;
+   right: 32px;
+   z-index: 95;
+   span {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin-top: 4px;
+      background-color: #fff;
+   }
+}
 
 // ======= Reasons
 
@@ -263,6 +268,7 @@ nav {
       font-size: 17px;
       color: $main-color;
       font-weight: 400;
+      line-height: 19px;
    }
 
    // .block__descr
@@ -468,7 +474,7 @@ nav {
    position: relative;
    min-height: 718px;
    padding: 50px 0 54px;
-   background: url(../img/world/world-bg.jpg);
+   background: url(../img/world/world-bg.jpg) center center/cover no-repeat;
 }
 .world-link {
    color: $main-color;
@@ -498,6 +504,7 @@ footer {
 .footer-wrapper {
    display: flex;
    justify-content: space-between;
+
    & > div {
       width: 33%;
       &:nth-child(3) {
@@ -574,10 +581,9 @@ footer {
       }
    }
 }
-
-// ==========================================
-@media (min-width: 1400px) {
-   .container {
-      max-width: 1140px;
+.footer-apps {
+   display: flex;
+   &__item {
+      margin: 0 3px;
    }
 }
