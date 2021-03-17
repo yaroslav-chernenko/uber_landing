@@ -58,7 +58,7 @@ nav {
    display: block;
    width: 100%;
    z-index: 90;
-   min-height: 50px;
+   height: 50px;
 }
 .menu {
    padding: 14px 70px;
@@ -151,7 +151,7 @@ nav {
       background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
       border-radius: 5px;
       border: none;
-      box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+      box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
       margin: 19px 0;
       @include btn-hover;
    }
@@ -201,7 +201,7 @@ nav {
       width: 259px;
       height: 63px;
       background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
-      box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+      box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
       font-size: 18px;
       color: #fff;
@@ -282,7 +282,7 @@ nav {
 //  ========MOBILE-APP
 
 .mobile {
-   padding: 47px 0 61px;
+   padding: 35px 0 24px;
    background-image: url(../img/mobbile-app/mobile-bg.png);
    .row {
       margin-top: 30px;
@@ -344,27 +344,27 @@ nav {
       }
    }
    &1 {
-      background-image: url(../img/mobbile-app/1.jpg);
+      background: url(../img/mobbile-app/1.jpg) center center/cover no-repeat;
    }
 
    &2 {
-      background-image: url(../img/mobbile-app/2.jpg);
+      background: url(../img/mobbile-app/2.jpg) center center/cover no-repeat;
    }
 
    &3 {
-      background-image: url(../img/mobbile-app/3.jpg);
+      background: url(../img/mobbile-app/3.jpg) center center/cover no-repeat;
    }
 
    &4 {
-      background-image: url(../img/mobbile-app/4.jpg);
+      background: url(../img/mobbile-app/4.jpg) center center/cover no-repeat;
    }
 
    &5 {
-      background-image: url(../img/mobbile-app/5.jpg);
+      background: url(../img/mobbile-app/5.jpg) center center/cover no-repeat;
    }
 
    &6 {
-      background-image: url(../img/mobbile-app/6.jpg);
+      background: url(../img/mobbile-app/6.jpg) center center/cover no-repeat;
    }
 }
 
